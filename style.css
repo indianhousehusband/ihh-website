@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Karla:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #fbf8f2;
+  --bg-panel: #f2ece0;
+  --text: #1c2438;
+  --text-muted: #6b6357;
+  --accent: #d9701e;
+  --accent-soft: #b85e17;
+  --sage: #6f7d4c;
+  --rule: rgba(28, 36, 56, 0.13);
+  --max-width: 640px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Karla', sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-color: rgba(199, 154, 84, 0.4);
+  text-underline-offset: 3px;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration-color: var(--accent);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+  color: var(--text);
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+
+.site-header {
+  padding: 40px 0 28px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 48px;
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.wordmark img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.site-nav a {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--accent);
+}
+
+/* Hero */
+
+.hero {
+  padding-bottom: 8px;
+}
+
+.hero h1 {
+  font-size: 2.35rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hero .tagline {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  color: var(--text-muted);
+  margin: 0 0 28px;
+}
+
+.hero p.lede {
+  max-width: 54ch;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+/* Essay list */
+
+.essay-list {
+  margin-top: 56px;
+}
+
+.essay-list h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.essay-row {
+  display: block;
+  padding: 22px 0;
+  border-top: 1px solid var(--rule);
+  text-decoration: none;
+}
+
+.essay-row:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.essay-row .essay-title {
+  font-family: 'Fraunces', serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text);
+  margin: 0 0 6px;
+  display: block;
+}
+
+.essay-row:hover .essay-title,
+.essay-row:focus-visible .essay-title {
+  color: var(--accent);
+}
+
+.essay-row .essay-meta {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--accent-soft);
+}
+
+.essay-row .essay-dek {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.more-link {
+  margin-top: 44px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* About / prose pages */
+
+.about-logo {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin: 0 0 36px;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
+.prose p {
+  margin: 0 0 22px;
+}
+
+.prose p.byline {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Essay page */
+
+.essay-header {
+  margin-bottom: 40px;
+}
+
+.essay-header .essay-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+}
+
+.essay-header h1 {
+  font-size: 1.9rem;
+  font-style: normal;
+}
+
+.essay-body p {
+  margin: 0 0 22px;
+  font-size: 1.06rem;
+}
+
+.essay-body p.signoff {
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 40px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+/* Footer */
+
+.site-footer {
+  margin-top: 80px;
+  padding: 32px 0 60px;
+  border-top: 1px solid var(--rule);
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.site-footer a {
+  color: var(--text-muted);
+}
+
+.tagline-footer {
+  color: var(--sage);
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin: 0 0 10px;
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+  .site-nav a {
+    margin-left: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
