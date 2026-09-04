@@ -29,3 +29,14 @@ The site now has the on-page basics in place: unique titles/descriptions per pag
 
 ## Adding more essays
 Copy one of the files in `essays/`, swap in the new title, meta line, and paragraphs, then add a matching row to the essay list in `index.html`. Also add the new page's URL to `sitemap.xml` so it gets indexed. Happy to do this in bulk whenever you're ready to bring over the rest of weeks 1-8.
+
+## Swapping in your own images
+The site currently has dashed placeholder boxes marking where images go, sized so the layout won't shift when you drop in real photos/illustrations:
+
+- **Hero image** (homepage, next to the intro text) — suggested 1200×900px. Find the `<div class="hero-image-placeholder img-placeholder">` in `index.html` and replace it with `<img src="your-image.jpg" alt="...">`.
+- **Essay thumbnails** (each row in the homepage essay list) — suggested 800×500px. Find each `<div class="essay-thumb-placeholder img-placeholder">` in `index.html` and swap in an `<img>` the same way.
+- **Essay cover images** (top of each individual essay page) — suggested 1200×675px (16:9). Find the `<div class="essay-cover-placeholder img-placeholder">` near the top of each file in `essays/` and swap it in.
+
+In each case, just delete the placeholder `<div>...</div>` and put an `<img src="..." alt="...">` in its place — the surrounding CSS classes already handle sizing and responsiveness, so you don't need to change anything else.
+
+The small heart-and-line dividers between sections are hand-built (inline SVG in the HTML, no image file), so they'll stay crisp at any size and don't need to be replaced.
