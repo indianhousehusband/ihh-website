@@ -413,3 +413,6 @@ h1, h2, h3 {
   .journal-feature-card { flex-direction:column; text-align:center; }
 }
 .journal-page { padding-top:44px; }
+
+.btn-soon { background:var(--bg-panel); color:var(--text-muted) !important; border:1px solid var(--rule); cursor:default; }
+.btn-soon:hover { background:var(--bg-panel); }
