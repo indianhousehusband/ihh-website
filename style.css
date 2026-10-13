@@ -394,3 +394,22 @@ h1, h2, h3 {
     transition: none !important;
   }
 }
+
+/* Journal */
+.kicker { display:block; font-size:.75rem; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin-bottom:8px; }
+.btn-download { display:inline-block; margin-top:14px; padding:12px 22px; background:var(--text); color:#fff !important; border-radius:4px; font-size:.95rem; text-decoration:none; }
+.btn-download:hover { background:var(--accent); }
+.muted { color:var(--text-muted); font-size:.9rem; }
+.journal-feature { margin-top:8px; }
+.journal-feature-card { display:flex; gap:24px; align-items:center; padding:20px; background:var(--bg-panel); border:1px solid var(--rule); border-radius:6px; text-decoration:none; color:var(--text); }
+.journal-feature-card img { width:110px; height:auto; flex:none; box-shadow:0 2px 10px rgba(28,36,56,.18); }
+.journal-feature-card .essay-title, .journal-feature-card .essay-dek { display:block; }
+.journal-hero { display:flex; gap:36px; align-items:flex-start; margin-bottom:36px; }
+.journal-hero img { width:280px; max-width:42%; height:auto; box-shadow:0 4px 18px rgba(28,36,56,.22); }
+.journal-list { padding-left:20px; line-height:1.9; }
+@media (max-width:640px) {
+  .journal-hero { flex-direction:column; align-items:center; text-align:center; }
+  .journal-hero img { max-width:70%; }
+  .journal-feature-card { flex-direction:column; text-align:center; }
+}
+.journal-page { padding-top:44px; }
