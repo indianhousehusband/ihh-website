@@ -96,6 +96,7 @@ h1, h2, h3 {
 .essay-thumb-placeholder {
   width: 128px;
   height: 96px;
+  object-fit: cover;
   flex-shrink: 0;
   font-size: 0.66rem;
   padding: 6px;
@@ -104,6 +105,7 @@ h1, h2, h3 {
 .essay-cover-placeholder {
   width: 100%;
   aspect-ratio: 16 / 9;
+  object-fit: cover;
   margin-bottom: 36px;
 }
 
