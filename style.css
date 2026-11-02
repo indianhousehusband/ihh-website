@@ -419,3 +419,4 @@ h1, h2, h3 {
 .btn-soon:hover { background:var(--bg-panel); }
 
 h1 .kicker { font-family: 'Karla', sans-serif; font-style: normal; font-weight: 600; margin-bottom: 10px; }
+.contact-page { padding-top: 44px; }
